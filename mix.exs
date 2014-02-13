@@ -5,6 +5,8 @@ defmodule Issues.Mixfile do
     [ app: :issues,
       version: "0.0.1",
       elixir: "~> 0.12.4",
+      name: "Issues",
+      source_url: "https://github.com/thevole/issues",
       escript_main_module: Issues.CLI,
       deps: deps ]
   end
@@ -25,7 +27,8 @@ defmodule Issues.Mixfile do
   defp deps do
     [
       { :httpotion, github: "myfreeweb/httpotion" },
-      { :jsonex, "~> 2.0.0" , github: "marcelog/jsonex" }
+      { :jsonex, "~> 2.0.0" , github: "marcelog/jsonex" },
+      { :ex_doc, github: "elixir-lang/ex_doc" }
     ]
   end
 end
